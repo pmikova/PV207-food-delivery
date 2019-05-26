@@ -6,12 +6,59 @@ package com.myspace.eat_now_food_delivery;
 
 public class FeedbackData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FeedbackData() {
-    }
+	@org.kie.api.definition.type.Label(value = "custEmail")
+	private java.lang.String customerEmail;
+	@org.kie.api.definition.type.Label(value = "feedbackText")
+	private java.lang.String feedbackText;
+	@org.kie.api.definition.type.Label(value = "feedbackValue")
+	private int feedbackValue;
+	@org.kie.api.definition.type.Label(value = "feedbackDate")
+	private java.time.LocalDate feedbackDate;
 
+	public FeedbackData() {
+	}
 
+	public java.lang.String getCustomerEmail() {
+		return this.customerEmail;
+	}
 
+	public void setCustomerEmail(java.lang.String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+
+	public java.lang.String getFeedbackText() {
+		return this.feedbackText;
+	}
+
+	public void setFeedbackText(java.lang.String feedbackText) {
+		this.feedbackText = feedbackText;
+	}
+
+	public int getFeedbackValue() {
+		return this.feedbackValue;
+	}
+
+	public void setFeedbackValue(int feedbackValue) {
+		this.feedbackValue = feedbackValue;
+	}
+
+	public java.time.LocalDate getFeedbackDate() {
+		return this.feedbackDate;
+	}
+
+	public void setFeedbackDate(java.time.LocalDate feedbackDate) {
+		this.feedbackDate = feedbackDate;
+	}
+
+	public FeedbackData(java.lang.String customerEmail,
+			java.lang.String feedbackText, int feedbackValue,
+			java.time.LocalDate feedbackDate) {
+		this.customerEmail = customerEmail;
+		this.feedbackText = feedbackText;
+		this.feedbackValue = feedbackValue;
+		this.feedbackDate = feedbackDate;
+	}
 
 }
