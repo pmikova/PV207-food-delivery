@@ -1,0 +1,1 @@
+{"id":"10dc38bb-8613-4b94-8ffa-f43229cd8453","name":"PostRating-taskform.frm","model":{"taskName":"PostRating","processId":"Eat-now-food-delivery.Feedbackprocess","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
