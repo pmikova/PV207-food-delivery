@@ -8,14 +8,19 @@ public class FeedbackData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "custEmail")
+	@org.kie.api.definition.type.Label("custEmail")
 	private java.lang.String customerEmail;
-	@org.kie.api.definition.type.Label(value = "feedbackText")
-	private java.lang.String feedbackText;
-	@org.kie.api.definition.type.Label(value = "feedbackValue")
-	private int feedbackValue;
-	@org.kie.api.definition.type.Label(value = "feedbackDate")
-	private java.time.LocalDate feedbackDate;
+	@org.kie.api.definition.type.Label(value = "Feedback restaurant text")
+	private java.lang.String feedbackRestaurantText;
+
+	@org.kie.api.definition.type.Label(value = "Feedback service text")
+	private java.lang.String feedbackServiceText;
+
+	@org.kie.api.definition.type.Label(value = "Restaurant Rating")
+	private java.lang.Integer feedbackRestaurantRating;
+
+	@org.kie.api.definition.type.Label(value = "Service Rating")
+	private java.lang.Integer feedbackServiceRating;
 
 	public FeedbackData() {
 	}
@@ -28,37 +33,50 @@ public class FeedbackData implements java.io.Serializable {
 		this.customerEmail = customerEmail;
 	}
 
-	public java.lang.String getFeedbackText() {
-		return this.feedbackText;
+	public java.lang.String getFeedbackRestaurantText() {
+		return this.feedbackRestaurantText;
 	}
 
-	public void setFeedbackText(java.lang.String feedbackText) {
-		this.feedbackText = feedbackText;
+	public void setFeedbackRestaurantText(
+			java.lang.String feedbackRestaurantText) {
+		this.feedbackRestaurantText = feedbackRestaurantText;
 	}
 
-	public int getFeedbackValue() {
-		return this.feedbackValue;
+	public java.lang.String getFeedbackServiceText() {
+		return this.feedbackServiceText;
 	}
 
-	public void setFeedbackValue(int feedbackValue) {
-		this.feedbackValue = feedbackValue;
+	public void setFeedbackServiceText(java.lang.String feedbackServiceText) {
+		this.feedbackServiceText = feedbackServiceText;
 	}
 
-	public java.time.LocalDate getFeedbackDate() {
-		return this.feedbackDate;
+	public java.lang.Integer getFeedbackRestaurantRating() {
+		return this.feedbackRestaurantRating;
 	}
 
-	public void setFeedbackDate(java.time.LocalDate feedbackDate) {
-		this.feedbackDate = feedbackDate;
+	public void setFeedbackRestaurantRating(
+			java.lang.Integer feedbackRestaurantRating) {
+		this.feedbackRestaurantRating = feedbackRestaurantRating;
+	}
+
+	public java.lang.Integer getFeedbackServiceRating() {
+		return this.feedbackServiceRating;
+	}
+
+	public void setFeedbackServiceRating(java.lang.Integer feedbackServiceRating) {
+		this.feedbackServiceRating = feedbackServiceRating;
 	}
 
 	public FeedbackData(java.lang.String customerEmail,
-			java.lang.String feedbackText, int feedbackValue,
-			java.time.LocalDate feedbackDate) {
+			java.lang.String feedbackRestaurantText,
+			java.lang.String feedbackServiceText,
+			java.lang.Integer feedbackRestaurantRating,
+			java.lang.Integer feedbackServiceRating) {
 		this.customerEmail = customerEmail;
-		this.feedbackText = feedbackText;
-		this.feedbackValue = feedbackValue;
-		this.feedbackDate = feedbackDate;
+		this.feedbackRestaurantText = feedbackRestaurantText;
+		this.feedbackServiceText = feedbackServiceText;
+		this.feedbackRestaurantRating = feedbackRestaurantRating;
+		this.feedbackServiceRating = feedbackServiceRating;
 	}
 
 }
