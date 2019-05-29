@@ -6,12 +6,70 @@ package com.myspace.eat_now_food_delivery;
 
 public class InitialFeedback implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InitialFeedback() {
-    }
+	@org.kie.api.definition.type.Label(value = "Restaurant Feedback Text")
+	private java.lang.String restText;
+	@org.kie.api.definition.type.Label(value = "Restaurant Feedback Value")
+	private java.lang.Integer restVal;
+	@org.kie.api.definition.type.Label(value = "Service feedback text")
+	private java.lang.String servText;
+	@org.kie.api.definition.type.Label(value = "Service feedback value")
+	private java.lang.Integer servVal;
+	@org.kie.api.definition.type.Label(value = "Customer email")
+	private java.lang.String email;
 
+	public InitialFeedback() {
+	}
 
+	public java.lang.String getRestText() {
+		return this.restText;
+	}
 
+	public void setRestText(java.lang.String restText) {
+		this.restText = restText;
+	}
+
+	public java.lang.Integer getRestVal() {
+		return this.restVal;
+	}
+
+	public void setRestVal(java.lang.Integer restVal) {
+		this.restVal = restVal;
+	}
+
+	public java.lang.String getServText() {
+		return this.servText;
+	}
+
+	public void setServText(java.lang.String servText) {
+		this.servText = servText;
+	}
+
+	public java.lang.Integer getServVal() {
+		return this.servVal;
+	}
+
+	public void setServVal(java.lang.Integer servVal) {
+		this.servVal = servVal;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public InitialFeedback(java.lang.String restText,
+			java.lang.Integer restVal, java.lang.String servText,
+			java.lang.Integer servVal, java.lang.String email) {
+		this.restText = restText;
+		this.restVal = restVal;
+		this.servText = servText;
+		this.servVal = servVal;
+		this.email = email;
+	}
 
 }
