@@ -8,18 +8,18 @@ public class FeedbackData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("custEmail")
+	@org.kie.api.definition.type.Label("Customer Email")
 	private java.lang.String customerEmail;
-	@org.kie.api.definition.type.Label(value = "Feedback restaurant text")
+	@org.kie.api.definition.type.Label("Feedback restaurant text")
 	private java.lang.String feedbackRestaurantText;
 
-	@org.kie.api.definition.type.Label(value = "Feedback service text")
+	@org.kie.api.definition.type.Label("Feedback service text")
 	private java.lang.String feedbackServiceText;
 
-	@org.kie.api.definition.type.Label(value = "Restaurant Rating")
+	@org.kie.api.definition.type.Label("Restaurant Rating")
 	private java.lang.Integer feedbackRestaurantRating;
 
-	@org.kie.api.definition.type.Label(value = "Service Rating")
+	@org.kie.api.definition.type.Label("Service Rating")
 	private java.lang.Integer feedbackServiceRating;
 
 	public FeedbackData() {
